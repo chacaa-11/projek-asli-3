@@ -1,4 +1,28 @@
 from datetime import datetime
+"""
+Program To-Do List - Aplikasi manajemen tugas dengan antarmuka berbasis terminal
+Modul ini menyediakan fungsi-fungsi untuk mengelola daftar tugas (to-do list) dengan
+fitur-fitur lengkap seperti menambah, mengedit, menghapus, dan memfilter tugas.
+Fungsi-fungsi utama:
+- load_data(): Memuat data tugas dari file penyimpanan
+- save_data(data): Menyimpan data tugas ke file
+- display_tasks(data): Menampilkan semua tugas dalam format tabel
+- add_task(data): Menambahkan tugas baru dengan deskripsi detail yang ditampilkan
+- mark_complete(data): Mengubah status tugas antara selesai dan belum selesai
+- edit_task(data): Mengedit nama, deskripsi, atau jenis tugas yang ada
+- delete_task(data): Menghapus tugas dengan konfirmasi pengguna
+- view_task_details(data): Menampilkan detail lengkap sebuah tugas
+- show_statistics(data): Menampilkan statistik kemajuan tugas
+- filter_by_jenis(data): Memfilter dan menampilkan tugas berdasarkan jenis
+- main_menu(): Menampilkan menu utama dan mengontrol alur program
+Struktur data tugas:
+- kegiatan: Nama/judul tugas
+- jenis: Kategori tugas (Kegiatan, Acara, Lainnya)
+- deskripsi: Penjelasan detail mengenai tugas
+- selesai: Status penyelesaian tugas (Boolean)
+- tanggal: Waktu pembuatan tugas dalam format DD-MM-YYYY HH:MM
+Format penyimpanan file: kegiatan|jenis|deskripsi|status|tanggal
+"""
 
 DATA_FILE = "todo_data.txt"
 
