@@ -360,4 +360,16 @@ def main_menu():
 if __name__ == "__main__":
     print("\n🚀 Selamat datang di Program To-Do List!")
     print("=" * 50)
-    main_menu()
+    # ANSI color codes
+    PINK = '\033[95m'
+    LIGHT_PURPLE = '\033[94m'
+    RESET = '\033[0m'
+    BOLD = '\033[1m'
+
+    # Replace print statements with colored versions
+    # At the end of the file, modify the if __name__ block:
+
+    if __name__ == "__main__":
+        print(f"\n{PINK}{BOLD}🚀 Selamat datang di Program To-Do List!{RESET}")
+        print(f"{LIGHT_PURPLE}{'=' * 50}{RESET}")
+        main_menu()
